@@ -4,19 +4,16 @@
     <string name="app_tagline">Smart Community &amp; Civic Tech</string>
     <string name="deskripsi">Civic Pulse hadir sebagai platform mobile Smart Community &amp; Civic Tech yang menghubungkan warga lintas generasi melalui jaringan digital pintar.</string>
 
-    <!-- Navigation Titles -->
     <string name="nav_home">Home</string>
     <string name="nav_bantuan">Bantuan</string>
     <string name="nav_lapor">Lapor</string>
     <string name="nav_forum">Forum</string>
     <string name="nav_profil">Profil</string>
 
-    <!-- Splash Screen -->
     <string name="splash_logo_desc">Civic Pulse Logo</string>
     <string name="version_text">v1.0 • Project Pramana</string>
     <string name="btn_mulai_sekarang">Mulai Sekarang</string>
 
-    <!-- Login Screen -->
     <string name="welcome_title">Selamat Datang</string>
     <string name="welcome_subtitle">Terhubung dengan komunitas dan layanan lokal Anda</string>
     <string name="email_label">Email</string>
@@ -25,12 +22,10 @@
     <string name="password_hint">Masukkan password Anda</string>
     <string name="btn_login">Masuk</string>
 
-    <!-- Navigation & Titles -->
     <string name="toolbar_login">Halaman Login</string>
     <string name="toolbar_main">Civic Pulse Center</string>
     <string name="toolbar_detail">Detail Profil</string>
 
-    <!-- Dialog & Messages -->
     <string name="logout_confirm_title">Logout</string>
     <string name="logout_confirm_msg">Apakah Anda yakin ingin keluar dari aplikasi?</string>
     <string name="yes">Ya</string>

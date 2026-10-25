@@ -55,7 +55,6 @@
             android:paddingTop="16dp"
             android:paddingBottom="40dp">
 
-            <!-- Pulse Indeks Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

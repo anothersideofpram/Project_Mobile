@@ -413,7 +413,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Logout Button in Profile -->
             <Button
                 android:id="@+id/btnLogoutProfile"
                 android:layout_width="match_parent"

@@ -24,7 +24,6 @@ class ActivityDetail : AppCompatActivity() {
             insets
         }
 
-        // Set up Toolbar pada ActivityDetail
         setSupportActionBar(binding.toolbarDetail)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbarDetail.setNavigationOnClickListener {

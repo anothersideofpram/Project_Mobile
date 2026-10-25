@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:paddingBottom="32dp">
 
-            <!-- Direct Logo without White Card Box -->
             <ImageView
                 android:id="@+id/imageViewLogo"
                 android:layout_width="140dp"
@@ -63,7 +62,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <!-- Dark Surface Card Login -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardLogin"
                 android:layout_width="0dp"
@@ -151,7 +149,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Link Register / Buat Akun Baru -->
             <TextView
                 android:id="@+id/txtToRegister"
                 android:layout_width="wrap_content"
