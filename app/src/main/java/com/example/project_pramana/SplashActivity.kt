@@ -48,7 +48,7 @@ class SplashActivity : AppCompatActivity() {
             intent.putExtra("password", savedPassword)
             startActivity(intent)
         } else {
-            val intent = Intent(this, HalamanLoginActivity::class.java)
+            val intent = Intent(this, TutorialScreenActivity::class.java)
             startActivity(intent)
         }
         finish()

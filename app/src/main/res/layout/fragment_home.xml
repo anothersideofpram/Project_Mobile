@@ -5,37 +5,40 @@
     android:layout_height="match_parent"
     android:background="@color/bg_light">
 
-    <LinearLayout
+    <!-- Top Fluid Header with bg_header background -->
+    <RelativeLayout
         android:id="@+id/headerBar"
         android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:background="@color/primary_dark"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_header"
         android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"
             android:fontFamily="sans-serif-medium"
-            android:text="Home"
+            android:text="Civic Pulse Center"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/btnNotification"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
             android:contentDescription="@string/splash_logo_desc"
             app:srcCompat="@drawable/ic_notifications"
             app:tint="@color/white" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="0dp"
@@ -52,9 +55,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="40dp">
+            android:paddingTop="8dp"
+            android:paddingBottom="48dp">
 
+            <!-- Pulse Indeks Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,6 +103,7 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Quick Action Shortcuts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,6 +111,7 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
+                <!-- SOS Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickSos"
                     android:layout_width="0dp"
@@ -146,6 +152,7 @@
 
                 </LinearLayout>
 
+                <!-- Bantuan Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickBantuan"
                     android:layout_width="0dp"
@@ -186,6 +193,7 @@
 
                 </LinearLayout>
 
+                <!-- Lapor Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickLapor"
                     android:layout_width="0dp"
@@ -226,6 +234,7 @@
 
                 </LinearLayout>
 
+                <!-- Forum Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickForum"
                     android:layout_width="0dp"
@@ -268,6 +277,7 @@
 
             </LinearLayout>
 
+            <!-- Aktivitas Terbaru Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -278,6 +288,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <!-- Activity Card 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -329,6 +340,7 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Activity Card 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

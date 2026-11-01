@@ -23,6 +23,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="40dp">
 
+            <!-- Horizontal Channel Tags -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -33,54 +34,35 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
-            <HorizontalScrollView
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:scrollbars="none">
+                app:columnCount="3"
+                app:useDefaultMargins="true">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="#lokal-events"
+                    app:layout_columnWeight="1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/bg_btn_login"
-                        android:paddingHorizontal="12dp"
-                        android:paddingVertical="6dp"
-                        android:text="#lokal-events"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="#lost-pets"
+                    app:layout_columnWeight="1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/bg_edittext_rounded"
-                        android:paddingHorizontal="12dp"
-                        android:paddingVertical="6dp"
-                        android:text="#lost-pets"
-                        android:textColor="@color/text_dark"
-                        android:textSize="12sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="#gardening-tips"
+                    app:layout_columnWeight="1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bg_edittext_rounded"
-                        android:paddingHorizontal="12dp"
-                        android:paddingVertical="6dp"
-                        android:text="#gardening-tips"
-                        android:textColor="@color/text_dark"
-                        android:textSize="12sp" />
+            </androidx.gridlayout.widget.GridLayout>
 
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
+            <!-- Polling Warga Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,6 +86,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
+                    <!-- Poll Option 1: Setuju 65% -->
                     <LinearLayout
                         android:id="@+id/btnVoteSetuju"
                         android:layout_width="match_parent"
@@ -152,6 +135,7 @@
 
                     </LinearLayout>
 
+                    <!-- Poll Option 2: Tidak Setuju 35% -->
                     <LinearLayout
                         android:id="@+id/btnVoteTidakSetuju"
                         android:layout_width="match_parent"
@@ -211,6 +195,7 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Aktivitas Terbaru -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -221,6 +206,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <!-- Post Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

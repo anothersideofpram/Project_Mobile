@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.project_pramana.databinding.FragmentGotongRoyongBinding
+import com.google.android.material.chip.Chip
 
 class GotongRoyongFragment : Fragment() {
 
@@ -25,7 +26,14 @@ class GotongRoyongFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnGenggamBantuan.setOnClickListener {
-            Toast.makeText(context, "Terima kasih telah bersedia membantu Ibu Maryam!", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Terima kasih telah bersedia membantu Ibu Maryam!", Toast.LENGTH_LONG).show()
+        }
+        binding.chipGroupFilter.setOnCheckedStateChangeListener { group, checkedIds ->
+            val selectedChipId = checkedIds.firstOrNull()
+            if (selectedChipId != null) {
+                val chip = group.findViewById<Chip>(selectedChipId)
+                Toast.makeText(requireContext(), "Filter: ${chip.text}", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

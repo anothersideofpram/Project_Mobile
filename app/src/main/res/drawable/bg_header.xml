@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="200dp"
+    android:viewportWidth="360"
+    android:viewportHeight="200">
+
+    <!-- Main Fluid Shape -->
+    <path android:pathData="M0,0 L360,0 L360,140 Q270,210 180,160 Q90,110 0,170 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="180"
+                android:endY="200"
+                android:startX="180"
+                android:startY="0"
+                android:type="linear">
+                <item android:color="?attr/colorPrimary" android:offset="0.0"/>
+                <item android:color="?attr/colorPrimaryContainer" android:offset="1.0"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glossy Accent Layer -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M0,0 L360,0 L360,110 Q250,180 160,130 Q70,80 0,140 Z" />
+</vector>
