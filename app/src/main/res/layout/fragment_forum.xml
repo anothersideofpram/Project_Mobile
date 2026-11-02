@@ -23,7 +23,6 @@
             android:paddingTop="16dp"
             android:paddingBottom="40dp">
 
-            <!-- Horizontal Channel Tags -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +61,6 @@
 
             </androidx.gridlayout.widget.GridLayout>
 
-            <!-- Polling Warga Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +84,6 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <!-- Poll Option 1: Setuju 65% -->
                     <LinearLayout
                         android:id="@+id/btnVoteSetuju"
                         android:layout_width="match_parent"
@@ -135,7 +132,6 @@
 
                     </LinearLayout>
 
-                    <!-- Poll Option 2: Tidak Setuju 35% -->
                     <LinearLayout
                         android:id="@+id/btnVoteTidakSetuju"
                         android:layout_width="match_parent"
@@ -195,7 +191,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Aktivitas Terbaru -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +201,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <!-- Post Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

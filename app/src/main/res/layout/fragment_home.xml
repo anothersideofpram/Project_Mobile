@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/bg_light">
 
-    <!-- Top Fluid Header with bg_header background -->
     <RelativeLayout
         android:id="@+id/headerBar"
         android:layout_width="0dp"
@@ -58,7 +57,6 @@
             android:paddingTop="8dp"
             android:paddingBottom="48dp">
 
-            <!-- Pulse Indeks Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,7 +101,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Quick Action Shortcuts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -111,7 +108,6 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
-                <!-- SOS Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickSos"
                     android:layout_width="0dp"
@@ -152,7 +148,6 @@
 
                 </LinearLayout>
 
-                <!-- Bantuan Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickBantuan"
                     android:layout_width="0dp"
@@ -193,7 +188,6 @@
 
                 </LinearLayout>
 
-                <!-- Lapor Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickLapor"
                     android:layout_width="0dp"
@@ -234,7 +228,6 @@
 
                 </LinearLayout>
 
-                <!-- Forum Button -->
                 <LinearLayout
                     android:id="@+id/btnQuickForum"
                     android:layout_width="0dp"
@@ -277,7 +270,6 @@
 
             </LinearLayout>
 
-            <!-- Aktivitas Terbaru Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -288,7 +280,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <!-- Activity Card 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -340,7 +331,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Activity Card 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
